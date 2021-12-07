@@ -9,7 +9,11 @@ from mrcnn.visualize import display_instances
 import matplotlib.pyplot as plt
 
 # Root directory of the project
-ROOT_DIR = "C:/Users/ashwi/Desktop/final year project/mrcnn custom model"
+colab = True
+if colab :
+	ROOT_DIR = '/content'
+else :
+	ROOT_DIR = "C:/Users/ashwi/Desktop/final year project/mrcnn custom model"
 ROOT_DIR = os.path.join(ROOT_DIR)
 print(ROOT_DIR)
 #changed above
